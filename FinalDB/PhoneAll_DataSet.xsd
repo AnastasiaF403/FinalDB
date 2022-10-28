@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PhoneAll_DataSet" targetNamespace="http://tempuri.org/PhoneAll_DataSet.xsd" xmlns:mstns="http://tempuri.org/PhoneAll_DataSet.xsd" xmlns="http://tempuri.org/PhoneAll_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Settings)" PropertyReference="ApplicationSettings.FinalDB.Properties.Settings.GlobalReference.Default.DBConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="All_phTableAdapter" GeneratorDataComponentClassName="All_phTableAdapter" Name="All_ph" UserDataComponentName="All_phTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBConnectionString (Settings)" DbObjectName="All_ph" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT InvN, Phone_Name, PhoneCost, HDD, RAM, CPU, ScreenSize, RearCam, FrontCam, VersionOS, Name_company, Name_OS, TypeName FROM All_ph</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="InvN" DataSetColumn="InvN" />
+              <Mapping SourceColumn="Phone_Name" DataSetColumn="Phone_Name" />
+              <Mapping SourceColumn="PhoneCost" DataSetColumn="PhoneCost" />
+              <Mapping SourceColumn="HDD" DataSetColumn="HDD" />
+              <Mapping SourceColumn="RAM" DataSetColumn="RAM" />
+              <Mapping SourceColumn="CPU" DataSetColumn="CPU" />
+              <Mapping SourceColumn="ScreenSize" DataSetColumn="ScreenSize" />
+              <Mapping SourceColumn="RearCam" DataSetColumn="RearCam" />
+              <Mapping SourceColumn="FrontCam" DataSetColumn="FrontCam" />
+              <Mapping SourceColumn="VersionOS" DataSetColumn="VersionOS" />
+              <Mapping SourceColumn="Name_company" DataSetColumn="Name_company" />
+              <Mapping SourceColumn="Name_OS" DataSetColumn="Name_OS" />
+              <Mapping SourceColumn="TypeName" DataSetColumn="TypeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PhoneAll_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PhoneAll_DataSet" msprop:Generator_UserDSName="PhoneAll_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="All_ph" msprop:Generator_TableClassName="All_phDataTable" msprop:Generator_TableVarName="tableAll_ph" msprop:Generator_TablePropName="All_ph" msprop:Generator_RowDeletingName="All_phRowDeleting" msprop:Generator_RowChangingName="All_phRowChanging" msprop:Generator_RowEvHandlerName="All_phRowChangeEventHandler" msprop:Generator_RowDeletedName="All_phRowDeleted" msprop:Generator_UserTableName="All_ph" msprop:Generator_RowChangedName="All_phRowChanged" msprop:Generator_RowEvArgName="All_phRowChangeEvent" msprop:Generator_RowClassName="All_phRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InvN" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnInvN" msprop:Generator_ColumnPropNameInRow="InvN" msprop:Generator_ColumnPropNameInTable="InvNColumn" msprop:Generator_UserColumnName="InvN" type="xs:int" minOccurs="0" />
+              <xs:element name="Phone_Name" msprop:Generator_ColumnVarNameInTable="columnPhone_Name" msprop:Generator_ColumnPropNameInRow="Phone_Name" msprop:Generator_ColumnPropNameInTable="Phone_NameColumn" msprop:Generator_UserColumnName="Phone_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PhoneCost" msprop:Generator_ColumnVarNameInTable="columnPhoneCost" msprop:Generator_ColumnPropNameInRow="PhoneCost" msprop:Generator_ColumnPropNameInTable="PhoneCostColumn" msprop:Generator_UserColumnName="PhoneCost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HDD" msprop:Generator_ColumnVarNameInTable="columnHDD" msprop:Generator_ColumnPropNameInRow="HDD" msprop:Generator_ColumnPropNameInTable="HDDColumn" msprop:Generator_UserColumnName="HDD" type="xs:int" minOccurs="0" />
+              <xs:element name="RAM" msprop:Generator_ColumnVarNameInTable="columnRAM" msprop:Generator_ColumnPropNameInRow="RAM" msprop:Generator_ColumnPropNameInTable="RAMColumn" msprop:Generator_UserColumnName="RAM" type="xs:int" minOccurs="0" />
+              <xs:element name="CPU" msprop:Generator_ColumnVarNameInTable="columnCPU" msprop:Generator_ColumnPropNameInRow="CPU" msprop:Generator_ColumnPropNameInTable="CPUColumn" msprop:Generator_UserColumnName="CPU" type="xs:float" minOccurs="0" />
+              <xs:element name="ScreenSize" msprop:Generator_ColumnVarNameInTable="columnScreenSize" msprop:Generator_ColumnPropNameInRow="ScreenSize" msprop:Generator_ColumnPropNameInTable="ScreenSizeColumn" msprop:Generator_UserColumnName="ScreenSize" type="xs:float" minOccurs="0" />
+              <xs:element name="RearCam" msprop:Generator_ColumnVarNameInTable="columnRearCam" msprop:Generator_ColumnPropNameInRow="RearCam" msprop:Generator_ColumnPropNameInTable="RearCamColumn" msprop:Generator_UserColumnName="RearCam" type="xs:int" minOccurs="0" />
+              <xs:element name="FrontCam" msprop:Generator_ColumnVarNameInTable="columnFrontCam" msprop:Generator_ColumnPropNameInRow="FrontCam" msprop:Generator_ColumnPropNameInTable="FrontCamColumn" msprop:Generator_UserColumnName="FrontCam" type="xs:int" minOccurs="0" />
+              <xs:element name="VersionOS" msprop:Generator_ColumnVarNameInTable="columnVersionOS" msprop:Generator_ColumnPropNameInRow="VersionOS" msprop:Generator_ColumnPropNameInTable="VersionOSColumn" msprop:Generator_UserColumnName="VersionOS" type="xs:float" minOccurs="0" />
+              <xs:element name="Name_company" msprop:Generator_ColumnVarNameInTable="columnName_company" msprop:Generator_ColumnPropNameInRow="Name_company" msprop:Generator_ColumnPropNameInTable="Name_companyColumn" msprop:Generator_UserColumnName="Name_company" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_OS" msprop:Generator_ColumnVarNameInTable="columnName_OS" msprop:Generator_ColumnPropNameInRow="Name_OS" msprop:Generator_ColumnPropNameInTable="Name_OSColumn" msprop:Generator_UserColumnName="Name_OS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TypeName" msprop:Generator_ColumnVarNameInTable="columnTypeName" msprop:Generator_ColumnPropNameInRow="TypeName" msprop:Generator_ColumnPropNameInTable="TypeNameColumn" msprop:Generator_UserColumnName="TypeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
